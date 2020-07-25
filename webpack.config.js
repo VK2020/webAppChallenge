@@ -20,10 +20,11 @@ var config = {
    plugins: [
       new HtmlWebpackPlugin({
          template: __dirname + '/public/index.html',
+         filename: './index.html',
          minify: {
             collapseWhitespace: true,
             removeComments: true
-         }
+         },
       }),
       new MiniCssExtractPlugin({
          filename: '[name].[hash].bundle.css'
